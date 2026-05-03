@@ -207,7 +207,7 @@ function playMemory(e){
         s2.pause();
         s1.volume = 0.4;
         next(4);
-    },25000);
+    },30000);
 }
 
 // 😂 RUN BUTTON
@@ -220,13 +220,13 @@ function move(){
 // ❤️ FINAL (UPDATED WITH TELEGRAM)
 function yes(){
 
-    fetch("https://api.telegram.org/8331714869:AAGb4GXRS4WrEbUmAqJKtNpb-_rAksXbFYA/sendMessage", {
+    fetch("https://api.telegram.org/sendMessage", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            chat_id: "7316343091",
+            chat_id: "",
             text: "Cutie ne 'Han aajao' click kar diya ❤️🥺"
         })
     }).then(()=> console.log("Message sent"));
